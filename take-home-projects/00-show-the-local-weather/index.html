@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="heading">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show the Local Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="background-image">
+
+    <nav>
+        <h1><span class="lowercase">f</span>reeCodeCamp</h1>
+        <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+    </nav>
+
+    <main>
+        <header>
+            <h2>Local Weather</h2>
+        </header>
+
+        <figure id="container" class="box box1">
+            <img class="image" src="./img/day-2.jpg" alt="">
+            <p class="msg">WELCOME</p>
+            <button class="button" type="button">Imperial Units</button>
+        </figure>
+
+        <div id="location_country">
+            <span class="location"></span>
+            <sup class="country" style="font-size: 12px;"></sup>
+        </div>
+
+        <div id="temp_desc_icon">
+            <p class="temp"></p>
+            <p class="desc"></p>
+            <img class="icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon">
+        </div>
+
+        <div>
+            <table id="other-weather-data-items">
+                <tr>
+                    <td class="sunrise">Sunrise</td>
+                    <td id="sunrise">06:20</td>
+                </tr>
+                <tr>
+                    <td class="sunset">Sunset</td>
+                    <td id="sunset">19:50</td>
+                </tr>
+                <tr>
+                    <td class="humidity">Humidity</td>
+                    <td id="humidity">48%</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copy-right">Copyright &copy; 2022 | Made by
+        <div>
+            <a href="https://pf.co.uk" target="_blank" style="color: white;">
+                <img class="logo" src="./img/PF.jpg" alt="Logo"></a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/1fc2587666.js" crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+</body>
+
+</html>

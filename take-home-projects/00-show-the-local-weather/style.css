@@ -1,0 +1,202 @@
+/* reset styles */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source+Sans+Pro', sans-serif, "Times New Roman";
+    font-size: 20px;
+    color: white;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* nav */
+nav {
+    overflow: hidden;
+    background-color: black;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.lowercase {
+    font-size: 42px;
+}
+
+i {
+    font-size: 45px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+/* figure */
+.box img {
+    width: 270px;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 35px 35px 35px 35px;
+}
+
+.box1 img {
+    object-fit: fill;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+}
+
+.msg {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+button {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(0deg, #537987 0%, #154579 60%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3074bc;
+}
+
+/* header */
+h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* main */
+main {
+    background-color: white;
+    background: linear-gradient(0deg, #537987 0%, #154579 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    margin-top: 10px;
+    width: 320px;
+    min-height: auto;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* location and country */
+#location_country {
+    margin-top: 15px;
+}
+
+/* temp, main and icon */
+.temp {
+    font-size: 40px;
+    margin: 10px 0px;
+}
+
+.icon {
+    font-size: 50px;
+    margin: -10px 0;
+}
+
+/* other-weather-data-items */
+#other-weather-data-items {
+    width: 270px;
+    margin-bottom: 15px;
+}
+
+.sunrise,
+.sunset,
+.humidity {
+    font-weight: bold;
+    text-align: left;
+}
+
+#sunrise,
+#sunset,
+#humidity {
+    text-align: right;
+}
+
+/* footer */
+footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+/* media queries */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    main {
+        width: 280px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .box img, #other-weather-data-items {
+        width: 250px;
+    }
+}
